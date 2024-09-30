@@ -1,0 +1,97 @@
+﻿@model IEnumerable<Disaster_Alleviation_Foundation.Models.Incident>
+
+@{
+    ViewData["Title"] = "Incidents";
+}
+<style>
+    table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: DodgerBlue;
+        color: white;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: red;
+    }
+
+    a:active {
+        text-decoration: underline;
+    }
+</style>
+
+<h1>Incidents</h1>
+<p>
+    <a asp-action="Create">Report an Incident</a>
+</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nature)
+            </th>
+            <th>Manage Incident Reports</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nature)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IncidentID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.IncidentID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.IncidentID">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,108 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: right;
+        }
+
+            li a {
+                display: block;
+                color: grey;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: lightgrey;
+                }
+
+        h3 {
+            color: green;
+            font-family: "Courier New", "monospace";
+            text-align: center;
+            font-size: 35px;
+        }
+
+        /* Style the footer */
+        footer {
+            padding-left: 80px;
+            text-align: center;
+        }
+
+        .p1 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+        }
+
+        td, th {
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+            <img src=@Url.Content("~/images/contact.PNG") width="1500" height="400">
+            <br>
+
+            <img src=@Url.Content("~/images/sa.PNG") width="900" height="450" style="float:left">
+            <img src=@Url.Content("~/images/so.PNG") width="900" height="450" style="float:left">
+            <br>
+            <img src=@Url.Content("~/images/se.PNG") width="900" height="450" style="float:left">
+            <br>
+            <img src=@Url.Content("~/images/si.PNG") width="900" height="450" style="float:left">
+            <br>
+
+            <img src=@Url.Content("~/images/contact2.PNG") width="1500" height="100">
+            <br>
+
+
+    <footer>
+        <table>
+            <tr>
+                <td style="color:green;">
+                    SA – NATIONAL CALL CENTRE<br>
+                    Toll free Number: 0800 786 911<br>
+                    Email: infor@giftofthegivers.org
+                </td>
+
+                <td>
+                    Subscribe to our news letter<br><input type="text" id="email" name="email">
+                    <br><input type="submit" value="Submit">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Copyright © 2024 Gift of the Givers Foundation. All Rights Reserved. “NPO 032-031, PB0 930018993”</td>
+
+                <td>terms & conditions</td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
+

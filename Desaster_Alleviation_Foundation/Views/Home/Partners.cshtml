@@ -1,0 +1,138 @@
+﻿@{
+    ViewData["Title"] = "Partners";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        li {
+            float: right;
+        }
+
+            li a {
+                display: block;
+                color: grey;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover {
+                    background-color: lightgrey;
+                }
+
+        h3 {
+            color: green;
+            font-family: "Courier New", "monospace";
+            text-align: center;
+            font-size: 35px;
+        }
+
+        article {
+            float: right;
+            padding: 20px;
+        }
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Style the footer */
+        footer {
+            padding-left: 80px;
+            text-align: center;
+        }
+
+        .p1 {
+            text-align: center;
+        }
+
+        table {
+            width: 80%;
+        }
+
+        td, th {
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <section>
+
+
+        <article>
+
+
+            <img src="@Url.Content("~/images/parnters.PNG")" width="1500" height="400" style="float:right"><br>
+            <table>
+                <tr>
+                    <td style="color:green;">THE PRIVATE SECTOR PLAYS A <br>VITALLY IMPORTANT ROLE IN<br> ASSISTING GIFT OF THE GIVERS <br>FULFIL ITS HUMANITARIAN VISION</td>
+                    <td>
+                        <h2>Introduction</h2><br>
+                        By working in partnership with the organisation, like minded and <br>committed corporate partners have the potential to make a real difference in the<br> lives of some of the most vulnerable people across South African, throughout <br>Africa and the world.
+                        In encouraging corporate partners, we would stress that <br>Gift of the Givers is a reputable, trustworthy organization, with a long flawless <br>delivery track record. Corporate linkages are welcomed in terms of our:<br>
+                        • Having in place sustainable projects in the fields of health, <br>education, water and sanitation, human settlement and environment<br>
+                        • Having many existing projects through which participating companies are able to add value to existing sites, or assist with expanding reach into new areas, and<br>
+                        • Encouraging company executives and members of staff to become actively<br> involved in the project they sponsor through our arrangement of hands-on days.<br>
+                        <h4>Benefits:</h4>
+                        • Promotion of Company Philanthropy<br>
+                        • Support for CSI Mandates<br>
+                        • Provision of Section 18A tax-deductible donations certificates<br>
+                        • Earning of Broad-Based Black Economic Empowerment Points and<br>
+                        • Payroll-giving, enabling staff of corporate organizations to make regular<br> contributions, via their companies, to specific projects
+                    </td>
+                </tr>
+            </table>
+
+            <img src="@Url.Content("~/images/partner2.PNG")" width="1500" height="400"><br>
+
+
+        </article>
+    </section>
+
+    <footer>
+        <table>
+            <tr>
+                <td style="color:green;">
+                    SA – NATIONAL CALL CENTRE<br>
+                    Toll free Number: 0800 786 911<br>
+                    Email: infor@giftofthegivers.org
+                </td>
+
+                <td>
+                    Subscribe to our news letter<br><input type="text" id="email" name="email">
+                    <br><input type="submit" value="Submit">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Copyright © 2024 Gift of the Givers Foundation. All Rights Reserved. “NPO 032-031, PB0 930018993”</td>
+
+                <td>terms & conditions</td>
+            </tr>
+        </table>
+    </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,54 @@
+﻿@model Disaster_Alleviation_Foundation.Models.Volunteer
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h4>Register to Volunteer</h4>
+<hr />
+<div>
+    <img src="@Url.Content("~/images/form.PNG")" width="800" height="300" style="float:right"><br>
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ID" class="control-label"></label>
+                <input asp-for="ID" class="form-control" />
+                <span asp-validation-for="ID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Contact" class="control-label"></label>
+                <input asp-for="Contact" class="form-control" />
+                <span asp-validation-for="Contact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HPS_Registration_Number" class="control-label"></label>
+                <input asp-for="HPS_Registration_Number" class="form-control" />
+                <span asp-validation-for="HPS_Registration_Number" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Reason_to_Volunteer" class="control-label"></label>
+                <input asp-for="Reason_to_Volunteer" class="form-control" />
+                <span asp-validation-for="Reason_to_Volunteer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Volunteerings List</a>
+</div>

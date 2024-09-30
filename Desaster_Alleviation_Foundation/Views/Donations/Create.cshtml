@@ -1,0 +1,51 @@
+﻿@model Disaster_Alleviation_Foundation.Models.Donation
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+<h4>Make a Donation</h4>
+<hr />
+<div>
+    <img src="@Url.Content("~/images/donor.PNG")" width="800" height="400" style="float:right">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="DonorID" class="control-label"></label>
+                <input asp-for="DonorID" class="form-control" />
+                <span asp-validation-for="DonorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ResourceType" class="control-label"></label>
+                <input asp-for="ResourceType" class="form-control" />
+                <span asp-validation-for="ResourceType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Quantity" class="control-label"></label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+                <span asp-validation-for="Date" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Destination" class="control-label"></label>
+                <input asp-for="Destination" class="form-control" />
+                <span asp-validation-for="Destination" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to Donation List</a>
+</div>
+
