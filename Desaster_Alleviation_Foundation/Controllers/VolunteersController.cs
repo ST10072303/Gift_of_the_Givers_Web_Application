@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Disaster_Alleviation_Foundation.Data;
 using Disaster_Alleviation_Foundation.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Disaster_Alleviation_Foundation.Controllers
 {
+    [Authorize]
     public class VolunteersController : Controller
     {
         private readonly OrganizationContext _context;
